@@ -1,6 +1,16 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
+
+const styles = makeStyles({
+  card: {
+    minWidth: 275
+  }
+});
 
 class App extends Component {
   state = {
@@ -23,13 +33,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{this.state.response}</p>
-      </div>
+      <Card className={styles.card}>
+      <CardContent>
+          Word of the Day
+      </CardContent>
+      <CardActions>
+        <Button>Learn More</Button>
+      </CardActions>
+    </Card>
     );
   }
 }
