@@ -75,6 +75,7 @@
             android:id="@+id/tietCep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:hint="CEP"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -95,6 +96,7 @@
             android:id="@+id/tietNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:hint="Número"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -113,15 +115,19 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Complemento" />
+            android:backgroundTint="@color/white"
+            android:hint="Complemento"
+            android:maxLines="1"
+            android:singleLine="false" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageView
         android:id="@+id/btNext"
-        android:layout_width="wrap_content"
+        android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        app:backgroundTint="@color/blue_two"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

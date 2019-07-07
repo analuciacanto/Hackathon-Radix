@@ -11,15 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        cvReligar.setOnClickListener {
+        ivReligar.setOnClickListener {
             startActivity(Intent(this, ReligarActivity::class.java))
         }
 
-        cvNova.setOnClickListener {
+        ivNova.setOnClickListener {
             //startActivity(Intent(this, NovaActivity::class.java))
         }
 
-        cvTrocar.setOnClickListener {
+        ivTrocar.setOnClickListener {
             //startActivity(Intent(this, TrocarActivity::class.java))
         }
     }

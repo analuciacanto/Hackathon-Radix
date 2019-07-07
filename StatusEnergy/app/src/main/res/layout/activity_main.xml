@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient">
@@ -16,119 +15,38 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvReligar"
+    <ImageView
+        android:id="@+id/ivReligar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="128dp"
         android:layout_marginTop="48dp"
-        android:minWidth="160dp"
-        app:cardCornerRadius="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_religar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
-        tools:layout_editor_absoluteY="48dp">
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp">
-
-            <ImageView
-                android:id="@+id/ivReligar"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/religar"
-                android:tint="@color/blue_three"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Religar\nenergia"
-                android:textSize="20sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivReligar" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvNova"
+    <ImageView
+        android:id="@+id/ivNova"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:minWidth="160dp"
-        app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/cvTrocar"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_nova"
+        app:layout_constraintBottom_toTopOf="@+id/ivTrocar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvReligar">
+        app:layout_constraintTop_toBottomOf="@+id/ivReligar" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp">
-
-            <ImageView
-                android:id="@+id/ivNova"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/nova"
-                android:tint="@color/blue_three"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Nova\nligação"
-                android:textSize="20sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivNova" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvTrocar"
+    <ImageView
+        android:id="@+id/ivTrocar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:minWidth="160dp"
-        app:cardCornerRadius="16dp"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_troca"
         app:layout_constraintBottom_toTopOf="@+id/ivCpflLogo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvNova">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp">
-
-            <ImageView
-                android:id="@+id/ivTrocar"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/trocar"
-                android:tint="@color/blue_three"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Trocar o nome\nna conta"
-                android:textSize="20sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivTrocar" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toBottomOf="@+id/ivNova" />
 
     <ImageView
         android:id="@+id/ivCpflLogo"

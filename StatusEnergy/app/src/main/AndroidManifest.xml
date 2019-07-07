@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoPendenciaActivity"></activity>
+        <activity android:name=".ResultadoPendenciaActivity" />
         <activity android:name=".TrocarActivity" />
         <activity android:name=".NovaActivity" />
         <activity android:name=".ReligarActivity" />
