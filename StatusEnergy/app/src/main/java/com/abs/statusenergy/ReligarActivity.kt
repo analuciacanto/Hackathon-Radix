@@ -12,6 +12,10 @@ class ReligarActivity : AppCompatActivity() {
         setContentView(R.layout.activity_religar)
 
         btNext.setOnClickListener {
+            if (tietCep.text.toString().isEmpty()) {
+                tietCep.error = "Campo obrigatório."
+            }
+
             if (tietNumber.text.toString().toInt() > 10) {
                 startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
             }
