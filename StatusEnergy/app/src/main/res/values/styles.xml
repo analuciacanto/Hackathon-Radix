@@ -7,4 +7,8 @@
         <item name="colorPrimaryDark">@color/blue_two</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="AppTheme.TextInputLayout">
+        <item name="colorAccent">@color/white</item>
+    </style>
 </resources>

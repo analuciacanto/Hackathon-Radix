@@ -14,7 +14,7 @@ class ReligarActivity : AppCompatActivity() {
         btNext.setOnClickListener {
             tietCep.text?.let {
                 if (it.isEmpty()) {
-                    tilComplemento.error = "Campo obrigatório."
+                    tilCep.error = "Campo obrigatório."
                     return@setOnClickListener
                 }
             }
