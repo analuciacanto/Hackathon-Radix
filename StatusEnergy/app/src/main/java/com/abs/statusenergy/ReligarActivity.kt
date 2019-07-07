@@ -23,11 +23,11 @@ class ReligarActivity : AppCompatActivity() {
         }
     }
 
-    fun checkUserDebts(){
+    fun checkUserDebts() {
         if (tietNumber.text.toString().toInt() > 10) {
             startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
         } else {
-            startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
+            startActivity(Intent(this, ResultadoSucessoActivity::class.java))
         }
     }
 }

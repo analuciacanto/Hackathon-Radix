@@ -7,30 +7,46 @@
 
     <ImageView
         android:id="@+id/ivBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="128dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_bubble"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivMascote"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMascote"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_mascote"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvBubble"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="96dp"
-        android:text="BOA! Não existe débito pendente para este endereço!"
-        android:textSize="20sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="BOA! Não existe débito pendente para este endereço."
+        android:textColor="@color/blue_three"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ivBubble"
-        app:layout_constraintLeft_toLeftOf="@+id/ivBubble"
-        app:layout_constraintRight_toRightOf="@+id/ivBubble"
+        app:layout_constraintEnd_toEndOf="@+id/ivBubble"
+        app:layout_constraintStart_toStartOf="@+id/ivBubble"
         app:layout_constraintTop_toTopOf="@+id/ivBubble" />
 
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -44,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivBubble" />
 
     <ImageView
-        android:id="@+id/ivReligar"
+        android:id="@+id/ivIdentidade"
         android:layout_width="wrap_content"
         android:layout_height="128dp"
         android:layout_marginTop="48dp"
@@ -52,18 +68,17 @@
         android:src="@drawable/img_identidade"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
     <ImageView
-        android:id="@+id/ivNova"
+        android:id="@+id/ivFoto"
         android:layout_width="wrap_content"
         android:layout_height="128dp"
         android:adjustViewBounds="true"
         android:src="@drawable/img_foto"
-        app:layout_constraintBottom_toTopOf="@+id/ivTrocar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivReligar" />
+        app:layout_constraintTop_toBottomOf="@+id/ivIdentidade" />
 
     <ImageView
         android:id="@+id/btNext"

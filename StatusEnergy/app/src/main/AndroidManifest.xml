@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.abs.statusenergy">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoSucessoActivity"></activity>
-        <activity android:name=".ResultadoPendenciaActivity" />
-        <activity android:name=".TrocarActivity" />
-        <activity android:name=".NovaActivity" />
-        <activity android:name=".ReligarActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultadoSucessoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultadoPendenciaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrocarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NovaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReligarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
