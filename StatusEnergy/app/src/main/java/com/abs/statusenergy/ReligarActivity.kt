@@ -19,9 +19,15 @@ class ReligarActivity : AppCompatActivity() {
                 }
             }
 
-            if (tietNumber.text.toString().toInt() > 10) {
-                startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
-            }
+            checkUserDebts()
+        }
+    }
+
+    fun checkUserDebts(){
+        if (tietNumber.text.toString().toInt() > 10) {
+            startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
+        } else {
+            startActivity(Intent(this, ResultadoPendenciaActivity::class.java))
         }
     }
 }

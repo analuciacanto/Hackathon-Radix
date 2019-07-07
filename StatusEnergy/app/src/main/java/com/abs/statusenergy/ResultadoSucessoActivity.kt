@@ -1,13 +1,12 @@
 package com.abs.statusenergy
 
-import android.os.Bundle
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class ResultadoPendenciaActivity : AppCompatActivity() {
+class ResultadoSucessoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resultado_pendencia)
+        setContentView(R.layout.activity_resultado_sucesso)
     }
 }
