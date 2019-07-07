@@ -9,7 +9,7 @@
         android:id="@+id/ivReligarIcon"
         android:layout_width="wrap_content"
         android:layout_height="128dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
         android:src="@drawable/religar"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -33,20 +33,44 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivReligarIcon" />
 
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/ivBubble"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
-        android:layout_marginRight="16dp"
-        android:text="Seja bem-vindo ao serviço para religamento de energia."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_bubble"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivMascote"
         app:layout_constraintTop_toBottomOf="@+id/ivReligarIcon" />
+
+    <ImageView
+        android:id="@+id/ivMascote"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_mascote_informativo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivReligarIcon" />
+
+    <TextView
+        android:id="@+id/tvBubble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Seja bem-vindo ao serviço para religamento de energia."
+        android:textColor="@color/blue_three"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBubble"
+        app:layout_constraintEnd_toEndOf="@+id/ivBubble"
+        app:layout_constraintStart_toStartOf="@+id/ivBubble"
+        app:layout_constraintTop_toTopOf="@+id/ivBubble" />
 
     <TextView
         android:id="@+id/tvFill"
@@ -54,11 +78,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Por favor, preencha os seus dados:"
-        android:textColor="@color/blue_three"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/ivBubble" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilCep"

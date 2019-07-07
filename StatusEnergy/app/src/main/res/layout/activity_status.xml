@@ -13,7 +13,7 @@
         android:layout_marginTop="48dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_bubble"
-        app:layout_constraintBottom_toTopOf="@+id/btNext"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/ivMascote"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,8 +25,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_mascote"
-        app:layout_constraintBottom_toTopOf="@+id/btNext"
+        android:src="@drawable/img_mascote_informativo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,9 +38,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
-        android:text="BOA! Não existe débito pendente para este endereço."
+        android:text="OBA! A sua solicitação já está em estado de análise documental."
         android:textColor="@color/blue_three"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ivBubble"
         app:layout_constraintEnd_toEndOf="@+id/ivBubble"
@@ -49,11 +48,12 @@
 
     <ImageView
         android:id="@+id/btNext"
-        android:layout_width="96dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_next"
+        android:padding="16dp"
+        android:src="@drawable/img_status_bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
