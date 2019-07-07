@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         cvNova.setOnClickListener {
-            startActivity(Intent(this, NovaActivity::class.java))
+            //startActivity(Intent(this, NovaActivity::class.java))
         }
 
         cvTrocar.setOnClickListener {
-            startActivity(Intent(this, TrocarActivity::class.java))
+            //startActivity(Intent(this, TrocarActivity::class.java))
         }
     }
 }
